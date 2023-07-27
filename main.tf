@@ -20,8 +20,8 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   }
 
   service_principal {
-    client_id     = "your_sp_client_id"  # Replace with your Azure Service Principal client_id
-    client_secret = "your_sp_client_secret"  # Replace with your Azure Service Principal client_secret
+    client_id     = "87b572d5-b79c-4ebf-a979-bcccaccb9440"  # Replace with your Azure Service Principal client_id
+    client_secret = "nez8Q~kNWyRSBgAyuAjiYgQEOAwG8tCV80SibaWW"  # Replace with your Azure Service Principal client_secret
   }
 
 }
