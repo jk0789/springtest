@@ -2,6 +2,14 @@ provider "azurerm" {
   features {}
 }
 
+# Define the backend configuration for Azure Storage
+terraform {
+  backend "azurerm" {
+    storage_account_name = "demoakscluster"
+    container_name       = "demo-aks"
+    key                  = "aksinfra.tfstate"
+  }
+}
 resource "azurerm_resource_group" "aks_rg" {
   name     = "Demo-aksrg"
   location = "East US"  # Change to your desired Azure region
