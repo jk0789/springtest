@@ -27,7 +27,7 @@ terraform {
 }
 resource "azurerm_resource_group" "aks_rg" {
   name     = "Demo-aksrg1"
-  location = "North Europe"  # Change to your desired Azure region
+  location = "East US"  # Change to your desired Azure region
 }
 
 resource "azurerm_kubernetes_cluster" "aks_cluster" {
