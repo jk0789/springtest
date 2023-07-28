@@ -22,6 +22,7 @@ terraform {
     storage_account_name = "demoakscluster"
     container_name       = "demo-aks"
     key                  = "aksinfra.tfstate"
+    access_key           = "oYkuqlNj5EJC/XgoE0HOgevZp7N9/oSDc5buCtGBGyhTCJeEFKZEpIgNDbsjlf16bc4BOxBL/viB+AStfUH2+Q=="
   }
 }
 resource "azurerm_resource_group" "aks_rg" {
