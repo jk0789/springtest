@@ -41,5 +41,8 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
     node_count = 2
     vm_size    = "Standard_DS2_v2"  # Change to your desired VM size
   }
-
+service_principal {
+    client_id     = "87b572d5-b79c-4ebf-a979-bcccaccb9440"      # Replace with your Service Principal's Client ID
+    client_secret = "nez8Q~kNWyRSBgAyuAjiYgQEOAwG8tCV80SibaWW"  # Replace with your Service Principal's Client Secret
+  }
 }
